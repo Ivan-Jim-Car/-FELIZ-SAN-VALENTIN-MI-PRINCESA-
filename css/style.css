@@ -1,0 +1,229 @@
+body {
+    margin:0;
+    background: #f1e3d3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   svg.rose {
+     display: block;
+     width:600px;
+     padding-top: 10em;
+     margin-top: -100px;
+   }
+   
+   h1 {
+       color: #c31d1d; /* Color del texto */
+       font-size: 30px;
+       margin-top: 100px;
+   
+   
+   }
+
+   
+   @keyframes rose-animation {
+     50% {
+       transform: scale(1);
+       opacity: 1;
+     }
+     100%{
+          transform: scale(1);
+       opacity: 1;
+     }
+   }
+   
+   .cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.1s alternate;
+   }
+   .cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.34s alternate;
+   }
+   .cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.5s alternate;
+   }
+   cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.2s alternate;
+   }
+   .boingInUp {
+     -webkit-animation-name: boingInUp;
+             animation-name: boingInUp;
+   }
+   @-webkit-keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   #hojas{
+     animation: boingInUp 2s ease infinite alternate  ;
+   }
+   @keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   .puffIn {
+     -webkit-animation-name: puffIn;
+             animation-name: puffIn;
+   }
+   @-webkit-keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   @keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+     50%{
+       opacity: 0.3;
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   #tallos{
+     animation: puffIn 2s infinite ease alternate;
+   }
+   #sombra_1{
+     visibility:hidden;
+   }
+   .container2{
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .buttons{
+        position: absolute;
+        display: flex;
+        flex-direction: column; 
+        top: -2%;
+        left: 3%;   
+      }
+      
+      .btn{
+        font-family: arial;
+      
+        text-decoration: none;
+        padding: 5px 15px;
+        font-size: 1.5rem;
+        position: relative;
+        margin: 32px;
+      }
+      
+      .btn-3{
+        color: white;
+        border-radius: 40px;    
+        box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+        overflow: hidden;
+      }
+      
+      .btn-3::after{
+        content: "";
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        background: #13ff13;
+        background-image: linear-gradient(-225deg, #650707 0%, #f04f4f 29%, #e23535 67%, #cb3737 100%);
+        z-index: -1;
+        transition: transform 0.5s ease;
+      }
+      
+      .btn-3:hover{
+        transform: translate(0, -6px);
+        box-shadow: 10px -10px 25px 0 rgba(218, 86, 102, 0.5), -10px 10px 25px 0 rgba(222, 107, 107, 0.794);
+      }
+      
+      .btn-3:hover::after{
+        transform: rotate(150deg);
+      }
+      
+      
